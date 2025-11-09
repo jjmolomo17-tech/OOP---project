@@ -1,0 +1,127 @@
+/* basic reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f4f4f9;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* main container */
+.container {
+    background-color: #fff;
+    width: 90%;
+    max-width: 600px;
+    border-radius: 8px;
+    box-shadow: 0 0 8px rgba(0,0,0,0.2);
+    padding: 20px;
+    text-align: center;
+}
+
+/* home screen */
+.topics {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.topic-card {
+    background-color: #e3e3ff;
+    padding: 20px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.topic-card:hover {
+    background-color: #d2d2ff;
+}
+
+/* quiz screen */
+#quiz-screen {
+    margin-top: 20px;
+}
+
+#question-text {
+    margin-bottom: 15px;
+}
+
+.answer {
+    display: block;
+    width: 100%;
+    margin: 8px 0;
+    padding: 10px;
+    border: 1px solid #ccc;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.answer:hover {
+    background-color: #ececec;
+}
+
+.answer.correct {
+    background-color: #b5ffb3;
+}
+
+.answer.incorrect {
+    background-color: #ffb3b3;
+}
+
+#next-btn, #restart-btn, #home-btn {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #4a5cff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#next-btn:hover, #restart-btn:hover, #home-btn:hover {
+    background-color: #3947cc;
+}
+
+/* hidden screens */
+.hidden {
+    display: none;
+}
+
+/* results */
+#result-screen {
+    margin-top: 30px;
+}
+
+#final-score {
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+}
+
+#percentage {
+    font-size: 1.1rem;
+    color: #555;
+}
+
+/* progress bar idea */
+.quiz-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+/* small responsive tweak */
+@media (max-width: 500px) {
+    .topics {
+        grid-template-columns: 1fr;
+    }
+}

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Melsoft Academy Quiz App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Main container -->
+    <div class="container">
+        <h1>Melsoft Academy Quiz</h1>
+
+        <!-- Home screen (quiz topics) -->
+        <div id="home-screen">
+            <h2>Select a Topic</h2>
+            <div class="topics">
+                <div class="topic-card" data-topic="science">Science</div>
+                <div class="topic-card" data-topic="history">History</div>
+                <div class="topic-card" data-topic="sports">Sports</div>
+                <div class="topic-card" data-topic="movies">Movies</div>
+            </div>
+        </div>
+
+        <!-- Quiz section -->
+        <div id="quiz-screen" class="hidden">
+            <div class="quiz-header">
+                <p id="progress">Question 1 of 10</p>
+                <p id="score">Score: 0</p>
+            </div>
+            <div id="question-box">
+                <h2 id="question-text">Question goes here</h2>
+                <div id="answer-options">
+                    <!-- answer buttons will go here -->
+                    <button class="answer">Option 1</button>
+                    <button class="answer">Option 2</button>
+                    <button class="answer">Option 3</button>
+                    <button class="answer">Option 4</button>
+                </div>
+            </div>
+            <button id="next-btn">Next</button>
+        </div>
+
+        <!-- Results screen -->
+        <div id="result-screen" class="hidden">
+            <h2>Your Results</h2>
+            <p id="final-score">You scored 0 out of 10</p>
+            <p id="percentage">0%</p>
+            <button id="restart-btn">Restart Quiz</button>
+            <button id="home-btn">Back to Topics</button>
+        </div>
+    </div>
+
+    <!-- JS file (for your group’s OOP logic) -->
+    <script src="script.js"></script>
+</body>
+</html>
